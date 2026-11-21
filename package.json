@@ -1,0 +1,30 @@
+{
+  "name": "estimatein10-field-service-local",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "db:setup": "node scripts/database.mjs setup",
+    "db:start": "node scripts/database.mjs start",
+    "db:stop": "node scripts/database.mjs stop",
+    "build": "tsc --noEmit && vite build",
+    "start": "node server/index.js",
+    "test": "node scripts/test.mjs"
+  },
+  "dependencies": {
+    "express": "4.22.3",
+    "pg": "8.20.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "6.0.2",
+    "vite": "8.3.8"
+  }
+}

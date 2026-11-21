@@ -1,0 +1,47 @@
+{
+  "sourceProject": "EstimateIn10 field-service modules",
+  "files": [
+    {
+      "source": "server/src/fsm/postgres.js",
+      "destination": "server/core/postgres.js",
+      "sha256": "6b65a5812b0749bbb84dc4cd8699bd54d6adb1616b0db13f9f26940ab760791f",
+      "adaptation": "unchanged"
+    },
+    {
+      "source": "server/src/fsm/dispatcher/dispatcher.js",
+      "destination": "server/core/dispatcher/dispatcher.js",
+      "sha256": "2d8a95c9dff1a30d85dd259f75b328a116d80d2ffcc8da97c6dd1d59fbf3a249",
+      "adaptation": "unchanged"
+    },
+    {
+      "source": "server/src/fsm/dispatcher/registry.js",
+      "destination": "server/core/dispatcher/registry.js",
+      "sha256": "214c360ac795beb15f9e90eca77c9ba2a579e5166ba4014aa2c4d35a2e5d1a85",
+      "adaptation": "unchanged"
+    },
+    {
+      "source": "server/src/fsm/dispatcher/errors.js",
+      "destination": "server/core/dispatcher/errors.js",
+      "sha256": "144b9b73025c30e29b1d8c0a86e9d90d56de1224d3ba4e98aff376b62d5350d6",
+      "adaptation": "unchanged"
+    },
+    {
+      "source": "server/src/fsm/transitions/visitTransitions.js",
+      "destination": "server/core/transitions/visitTransitions.js",
+      "sha256": "55df66c4895f635f5f1f6278efbeef017dd488cc092c320d9f217001e082caa1",
+      "adaptation": "unchanged"
+    },
+    {
+      "source": "server/src/fsm/transitions/scheduleConflicts.js",
+      "destination": "server/core/transitions/scheduleConflicts.js",
+      "sha256": "2459fde46d11f881d455fa9924a38d810b000d15e22ed50b77ec3250469e4fa6",
+      "adaptation": "unchanged"
+    },
+    {
+      "source": "server/src/fsm/transitions/jobTransitions.js",
+      "destination": "server/core/transitions/jobTransitions.js",
+      "sha256": "79ca4f3f4ae4c58246583d92e49de5accedb334945609c32e27062ad9d2f85ca",
+      "adaptation": "retained job.complete only; removed invoice creation"
+    }
+  ]
+}
